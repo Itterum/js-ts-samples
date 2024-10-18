@@ -1,0 +1,1 @@
+A collection of JavaScript and TypeScript examples and solutions for quick learning and practicing
