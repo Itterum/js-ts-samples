@@ -16,7 +16,7 @@ class BaseParser {
         try {
             await page.route(/(png|jpeg|jpg|gif|svg|webp|ico)$/, route => route.abort());
             await page.goto(this.url);
-            await page.screenshot({ path: `${this.name}.png`, fullPage: true });
+            await page.screenshot({ path: `../trash/${this.name}.png`, fullPage: true });
             await page.waitForTimeout(1000);
 
             const elements = await page.$$(this.selector);
