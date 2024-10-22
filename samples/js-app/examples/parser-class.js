@@ -10,7 +10,7 @@ class BaseParser {
     async parse(element) { return { ...element }; }
 
     async run() {
-        const browser = await chromium.launch({ headless: false });
+        const browser = await chromium.launch({ headless: true });
         const page = await browser.newPage();
 
         try {
