@@ -60,4 +60,5 @@ class GithubExtractor extends BaseParser {
 }
 
 const parser = new GithubExtractor("https://github.com/trending", ".Box-row", "Github");
-parser.run();
+
+(async () => await parser.run())();
