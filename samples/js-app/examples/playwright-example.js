@@ -50,7 +50,7 @@ const writeDataToFile = (data) => {
 
         const result = await Promise.all(elements.map(element => parse(element)));
 
-        await writeDataToFile(result);
+        writeDataToFile(result);
     } catch (error) {
         console.error(error);
     } finally {
